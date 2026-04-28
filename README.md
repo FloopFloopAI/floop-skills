@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/github/license/FloopFloopAI/floop-skills)](./LICENSE)
 [![Validate skills](https://img.shields.io/github/actions/workflow/status/FloopFloopAI/floop-skills/validate.yml?branch=main&logo=github&label=validate)](https://github.com/FloopFloopAI/floop-skills/actions/workflows/validate.yml)
-[![Skills](https://img.shields.io/badge/skills-6-blue)](#whats-in-the-box)
+[![Skills](https://img.shields.io/badge/skills-7-blue)](#whats-in-the-box)
 
 **Drop-in [Claude Code](https://www.anthropic.com/claude-code) / [Claude Desktop](https://claude.ai/download) / [Copilot CLI](https://docs.github.com/en/copilot/github-copilot-in-the-cli) / Codex / Gemini CLI skills for [FloopFloop](https://www.floopfloop.com).**
 
@@ -20,6 +20,7 @@ Pair them with the MCP and an agent goes from "configured to call FloopFloop too
 | [`floopfloop-stream-build-status`](./skills/floopfloop-stream-build-status/SKILL.md) | You need to wait for a build to finish — `wait_for_live` vs `project_status` polling |
 | [`floopfloop-handle-errors`](./skills/floopfloop-handle-errors/SKILL.md) | A FloopFloop tool returns an error — the retryable / permanent split + canonical exponential-backoff pattern |
 | [`floopfloop-manage-secrets`](./skills/floopfloop-manage-secrets/SKILL.md) | The user wants to add, list, or remove project env-var secrets safely |
+| [`floopfloop-check-subscription`](./skills/floopfloop-check-subscription/SKILL.md) | The user asks about plan, billing period, or credit balance — distinguishes `current_subscription` from `usage_summary` |
 
 Each skill is a self-contained markdown file with frontmatter — the agent's host process discovers them at startup and loads the body on demand when the description matches the user's intent.
 
