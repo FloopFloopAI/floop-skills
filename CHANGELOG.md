@@ -5,6 +5,22 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.2.0] — 2026-04-28
+
+### Added
+- **`floopfloop-check-subscription` skill** — covers the
+  `current_subscription` MCP tool (newly shipped in `@floopfloop/mcp@0.1.0-alpha.6`).
+  Walks the agent through distinguishing `current_subscription`
+  ("what plan am I on, when does it renew?") from `usage_summary`
+  ("am I about to hit my limits?") — the two tools overlap on
+  `monthlyCredits` and `maxProjects` but answer different user
+  questions. Documents the both-null edge case for users mid-signup
+  or cancelled-with-no-grace.
+
+### Changed
+- Total skill count now **7** (was 6). Skills badge in README + the
+  "What's in the box" table updated in lockstep.
+
 ## [0.1.0] — 2026-04-27
 
 ### Added
